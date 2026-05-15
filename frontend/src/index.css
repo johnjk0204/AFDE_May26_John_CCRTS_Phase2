@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body { font-family: 'Inter', sans-serif; @apply bg-gray-50 text-gray-900; }
+  * { box-sizing: border-box; }
+}
+
+@layer components {
+  .btn-primary { @apply bg-blue-600 hover:bg-blue-700 text-white font-medium px-4 py-2 rounded-lg transition-colors duration-200 disabled:opacity-50 disabled:cursor-not-allowed; }
+  .btn-secondary { @apply bg-white hover:bg-gray-50 text-gray-700 font-medium px-4 py-2 rounded-lg border border-gray-300 transition-colors duration-200; }
+  .btn-danger { @apply bg-red-600 hover:bg-red-700 text-white font-medium px-4 py-2 rounded-lg transition-colors duration-200; }
+  .btn-success { @apply bg-green-600 hover:bg-green-700 text-white font-medium px-4 py-2 rounded-lg transition-colors duration-200; }
+  .input-field { @apply w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200; }
+  .card { @apply bg-white rounded-xl shadow-sm border border-gray-100 p-6; }
+  .badge-open { @apply px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-100 text-blue-800; }
+  .badge-assigned { @apply px-2.5 py-0.5 rounded-full text-xs font-medium bg-purple-100 text-purple-800; }
+  .badge-inprogress { @apply px-2.5 py-0.5 rounded-full text-xs font-medium bg-yellow-100 text-yellow-800; }
+  .badge-escalated { @apply px-2.5 py-0.5 rounded-full text-xs font-medium bg-red-100 text-red-800; }
+  .badge-resolved { @apply px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800; }
+  .badge-closed { @apply px-2.5 py-0.5 rounded-full text-xs font-medium bg-gray-100 text-gray-800; }
+  .badge-pending { @apply px-2.5 py-0.5 rounded-full text-xs font-medium bg-orange-100 text-orange-800; }
+  .priority-low { @apply px-2.5 py-0.5 rounded-full text-xs font-medium bg-gray-100 text-gray-600; }
+  .priority-medium { @apply px-2.5 py-0.5 rounded-full text-xs font-medium bg-yellow-100 text-yellow-700; }
+  .priority-high { @apply px-2.5 py-0.5 rounded-full text-xs font-medium bg-orange-100 text-orange-700; }
+  .priority-critical { @apply px-2.5 py-0.5 rounded-full text-xs font-medium bg-red-100 text-red-700; }
+}
+
+.sidebar-link { @apply flex items-center gap-3 px-4 py-2.5 rounded-lg text-sm font-medium text-gray-600 hover:bg-blue-50 hover:text-blue-700 transition-all duration-200; }
+.sidebar-link.active { @apply bg-blue-600 text-white hover:bg-blue-700 hover:text-white; }

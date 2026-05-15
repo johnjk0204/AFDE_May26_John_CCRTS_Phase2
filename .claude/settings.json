@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(reg query *)",
+      "PowerShell(Invoke-RestMethod -Uri \"http://localhost:5000/api/auth/login\" -Method POST -ContentType \"application/json\" -Body '{\"email\":\"admin@company.com\",\"password\":\"Password@123\"}' -ErrorVariable restError 2>&1)",
+      "PowerShell(if \\($restError\\) { $restError })",
+      "PowerShell(Get-WmiObject Win32_Process | Where-Object { $_.ProcessId -eq 1580 } | Select-Object ProcessId, Name, ExecutablePath)"
+    ]
+  }
+}
