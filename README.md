@@ -221,3 +221,149 @@ All accounts use password: **Password@123**
 | Category Management | Admin only |
 | Notifications | All roles |
 | Profile | All roles |
+
+---
+
+## Phase 2 — ETL Pipeline
+
+### Overview
+
+Phase 2 extends the system with a **Python ETL pipeline** that ingests historical complaint data from a CSV dataset, transforms it into analytics-ready metrics, and loads the results into dedicated PostgreSQL reporting tables. The frontend Reports Dashboard then visualises these ETL-generated insights alongside the live operational data.
+
+### ETL Workflow
+
+```
+datasets/complaints_dataset.csv
+          │
+          ▼
+┌─────────────────────────┐
+│   STAGE 1 — EXTRACT     │  Reads CSV (85 historical records, 12 months)
+│   extract.py            │  + merges with live PostgreSQL complaints table
+└──────────┬──────────────┘
+           │ raw DataFrame
+           ▼
+┌─────────────────────────┐
+│   STAGE 2 — TRANSFORM   │  • Parses & normalises dates, enums, ratings
+│   transform.py          │  • Derives resolution_time_hours, SLA breach flag
+│                         │  • Aggregates into 5 metric sets:
+│                         │      - Complaint summary (KPIs)
+│                         │      - Agent performance
+│                         │      - Category trends
+│                         │      - Monthly trends (12 months)
+│                         │      - Priority analysis
+└──────────┬──────────────┘
+           │ dict of DataFrames
+           ▼
+┌─────────────────────────┐
+│   STAGE 3 — LOAD        │  Creates analytics tables (if absent)
+│   load.py               │  Truncates & reloads reporting tables:
+│                         │      etl_complaint_summary
+│                         │      etl_agent_performance
+│                         │      etl_category_trends
+│                         │      etl_monthly_trends
+│                         │      etl_priority_analysis
+└─────────────────────────┘
+           │
+           ▼
+  PostgreSQL → Backend API → React Dashboard
+```
+
+### Dataset
+
+| File | Records | Date Range |
+|------|---------|------------|
+| `datasets/complaints_dataset.csv` | 85 | June 2025 – May 2026 |
+
+Columns: `complaint_number, customer_name, customer_email, category, subject, priority, status, assigned_agent, created_date, resolved_date, closed_date, sla_deadline, sla_breached, resolution_time_hours, feedback_rating, region`
+
+### ETL Setup & Execution
+
+```bash
+# 1. Navigate to etl folder
+cd etl
+
+# 2. Install Python dependencies
+pip install -r requirements.txt
+
+# 3. Configure database connection
+cp .env.example .env
+# Edit .env with your DB credentials
+
+# 4. Create analytics tables in PostgreSQL
+psql -U postgres -d complaint_system -f ../database/analytics_schema.sql
+
+# 5. Run the pipeline
+python etl_pipeline.py
+```
+
+**Expected output:**
+```
+==============================================================
+  CUSTOMER COMPLAINT ANALYTICS  —  ETL PIPELINE
+  Started : 2026-05-20  10:00:00
+==============================================================
+
+--- STAGE 1 : EXTRACT ---
+[EXTRACT] Reading from complaints_dataset.csv ...
+[EXTRACT] CSV  → 85 records loaded
+[EXTRACT] DB   → 5 records loaded
+[EXTRACT] Combined (after dedup) → 90 records
+
+--- STAGE 2 : TRANSFORM ---
+[TRANSFORM] Cleaning & normalising ...
+[TRANSFORM] Building complaint summary ...
+...
+
+--- STAGE 3 : LOAD ---
+[LOAD] All analytics tables updated successfully.
+
+==============================================================
+  ETL PIPELINE COMPLETE
+  Duration            : 1.24s
+  Records processed   : 90
+  SLA compliance rate : 82.22%
+  SLA breaches        : 16
+  Avg resolution time : 32.5h
+  Avg feedback rating : 3.89 / 5
+==============================================================
+```
+
+### Analytics Tables (PostgreSQL)
+
+| Table | Description |
+|-------|-------------|
+| `etl_complaint_summary` | Overall KPIs: totals, SLA rate, avg resolution, avg rating |
+| `etl_agent_performance` | Per-agent: assigned, resolved, resolution rate, avg hours, SLA breaches |
+| `etl_category_trends` | Per-category: total, resolved, open, avg hours, SLA breaches |
+| `etl_monthly_trends` | Month-by-month: totals, resolved, SLA breaches, avg rating |
+| `etl_priority_analysis` | Per-priority: totals, resolved, avg hours, SLA breach rate |
+
+### ETL API Endpoints
+
+| Endpoint | Access | Description |
+|----------|--------|-------------|
+| `GET /api/dashboard/etl-summary` | Admin, Supervisor, Quality Team | Latest KPI summary |
+| `GET /api/dashboard/etl-agent-performance` | Admin, Supervisor, Quality Team | Agent metrics from ETL |
+| `GET /api/dashboard/etl-category-trends` | Admin, Supervisor, Quality Team | Category breakdown from ETL |
+| `GET /api/dashboard/etl-monthly-trends` | Admin, Supervisor, Quality Team | 12-month trend from ETL |
+| `GET /api/dashboard/etl-priority-analysis` | Admin, Supervisor, Quality Team | Priority analysis from ETL |
+
+### ETL Project Structure
+
+```
+customer-complaint-system/
+├── datasets/
+│   └── complaints_dataset.csv     # Input data (85 records, 12 months)
+├── etl/
+│   ├── etl_pipeline.py            # Main orchestrator (run this)
+│   ├── extract.py                 # Stage 1: read CSV + PostgreSQL
+│   ├── transform.py               # Stage 2: clean, normalise, aggregate
+│   ├── load.py                    # Stage 3: write to analytics tables
+│   ├── config.py                  # DB connection & path config
+│   ├── requirements.txt           # Python dependencies
+│   └── .env.example               # Environment variable template
+└── database/
+    ├── schema.sql                  # Core application tables
+    ├── seed.sql                    # Demo data
+    └── analytics_schema.sql       # ETL reporting tables (Phase 2)
+```

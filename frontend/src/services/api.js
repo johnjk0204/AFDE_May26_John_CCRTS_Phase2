@@ -83,6 +83,12 @@ export const dashboardAPI = {
   getMonthlyTrends: () => api.get('/dashboard/monthly-trends'),
   getPriorityDistribution: () => api.get('/dashboard/priority-distribution'),
   getResolutionTime: () => api.get('/dashboard/resolution-time'),
+  // ETL analytics (populated by Python ETL pipeline)
+  getEtlSummary: () => api.get('/dashboard/etl-summary'),
+  getEtlAgentPerformance: () => api.get('/dashboard/etl-agent-performance'),
+  getEtlCategoryTrends: () => api.get('/dashboard/etl-category-trends'),
+  getEtlMonthlyTrends: () => api.get('/dashboard/etl-monthly-trends'),
+  getEtlPriorityAnalysis: () => api.get('/dashboard/etl-priority-analysis'),
 };
 
 // Feedback

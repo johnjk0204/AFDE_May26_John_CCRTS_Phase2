@@ -148,3 +148,66 @@ exports.getResolutionTime = async (req, res, next) => {
     next(err);
   }
 };
+
+// ── ETL Analytics endpoints (read from Python ETL output tables) ──────────────
+
+exports.getEtlSummary = async (req, res, next) => {
+  try {
+    const result = await query(
+      `SELECT * FROM etl_complaint_summary ORDER BY etl_run_at DESC LIMIT 1`,
+      []
+    );
+    res.json(result.rows[0] || null);
+  } catch (err) {
+    next(err);
+  }
+};
+
+exports.getEtlAgentPerformance = async (req, res, next) => {
+  try {
+    const result = await query(
+      `SELECT * FROM etl_agent_performance ORDER BY total_resolved DESC`,
+      []
+    );
+    res.json(result.rows);
+  } catch (err) {
+    next(err);
+  }
+};
+
+exports.getEtlCategoryTrends = async (req, res, next) => {
+  try {
+    const result = await query(
+      `SELECT * FROM etl_category_trends ORDER BY total_complaints DESC`,
+      []
+    );
+    res.json(result.rows);
+  } catch (err) {
+    next(err);
+  }
+};
+
+exports.getEtlMonthlyTrends = async (req, res, next) => {
+  try {
+    const result = await query(
+      `SELECT * FROM etl_monthly_trends ORDER BY report_month ASC`,
+      []
+    );
+    res.json(result.rows);
+  } catch (err) {
+    next(err);
+  }
+};
+
+exports.getEtlPriorityAnalysis = async (req, res, next) => {
+  try {
+    const result = await query(
+      `SELECT * FROM etl_priority_analysis
+       ORDER BY CASE priority WHEN 'Critical' THEN 1 WHEN 'High' THEN 2 WHEN 'Medium' THEN 3 WHEN 'Low' THEN 4 END`,
+      []
+    );
+    res.json(result.rows);
+  } catch (err) {
+    next(err);
+  }
+};

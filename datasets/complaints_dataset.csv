@@ -1,0 +1,206 @@
+complaint_number,customer_name,customer_email,category,subject,priority,status,assigned_agent,created_date,resolved_date,closed_date,sla_deadline,sla_breached,resolution_time_hours,feedback_rating,region
+CMP-20250601-0001,Alice Johnson,alice.j@email.com,Billing,Incorrect invoice amount,High,Resolved,Sarah Johnson,2025-06-01,2025-06-02,2025-06-03,2025-06-02 09:00:00,No,18.5,4,North
+CMP-20250605-0002,Bob Smith,bob.s@email.com,Technical Support,Cannot login to portal,Critical,Resolved,Mike Wilson,2025-06-05,2025-06-05,2025-06-06,2025-06-05 13:00:00,No,2.5,5,South
+CMP-20250610-0003,Carol White,carol.w@email.com,Delivery Issues,Package not delivered,Medium,Closed,Emily Davis,2025-06-10,2025-06-12,2025-06-13,2025-06-12 10:00:00,No,26.0,3,East
+CMP-20250615-0004,David Brown,david.b@email.com,Service Disruption,Internet outage for 3 hours,Critical,Closed,James Brown,2025-06-15,2025-06-15,2025-06-16,2025-06-15 19:00:00,Yes,6.0,2,West
+CMP-20250620-0005,Eve Davis,eve.d@email.com,Account Management,Unable to update profile,Low,Resolved,Sarah Johnson,2025-06-20,2025-06-23,,2025-06-23 08:00:00,No,60.0,5,North
+CMP-20250625-0006,Frank Miller,frank.m@email.com,Customer Service,Rude behavior by agent,High,Closed,Mike Wilson,2025-06-25,2025-06-26,2025-06-27,2025-06-26 15:00:00,No,22.0,1,South
+CMP-20250701-0007,Grace Wilson,grace.w@email.com,Product Defects,Defective product received,High,Resolved,Emily Davis,2025-07-01,2025-07-02,,2025-07-02 09:00:00,No,20.0,4,East
+CMP-20250705-0008,Henry Taylor,henry.t@email.com,Billing,Double charge on credit card,Critical,Resolved,James Brown,2025-07-05,2025-07-05,2025-07-06,2025-07-05 15:00:00,No,3.5,5,West
+CMP-20250710-0009,Alice Johnson,alice.j@email.com,Technical Support,App crashes on startup,Medium,Closed,Sarah Johnson,2025-07-10,2025-07-12,2025-07-13,2025-07-12 10:00:00,No,38.0,4,North
+CMP-20250715-0010,Bob Smith,bob.s@email.com,Service Disruption,Email service down,High,Escalated,Mike Wilson,2025-07-15,,,2025-07-16 15:00:00,Yes,,,South
+CMP-20250720-0011,Carol White,carol.w@email.com,Delivery Issues,Wrong item delivered,Medium,Resolved,Emily Davis,2025-07-20,2025-07-22,,2025-07-22 08:00:00,No,34.0,3,East
+CMP-20250725-0012,David Brown,david.b@email.com,Account Management,Password reset not working,Low,Closed,James Brown,2025-07-25,2025-07-28,2025-07-29,2025-07-28 08:00:00,No,66.5,5,West
+CMP-20250801-0013,Eve Davis,eve.d@email.com,Billing,Late fee incorrectly applied,High,Resolved,Sarah Johnson,2025-08-01,2025-08-02,,2025-08-02 01:00:00,No,21.0,4,North
+CMP-20250805-0014,Frank Miller,frank.m@email.com,Technical Support,Slow system performance,Medium,Closed,Mike Wilson,2025-08-05,2025-08-07,2025-08-08,2025-08-07 05:00:00,No,42.0,3,South
+CMP-20250810-0015,Grace Wilson,grace.w@email.com,Product Defects,Product does not match description,Low,Resolved,Emily Davis,2025-08-10,2025-08-13,,2025-08-13 10:00:00,No,68.0,4,East
+CMP-20250815-0016,Henry Taylor,henry.t@email.com,Service Disruption,VPN connection failure,Critical,Closed,James Brown,2025-08-15,2025-08-15,2025-08-16,2025-08-15 08:00:00,No,1.5,5,West
+CMP-20250820-0017,Alice Johnson,alice.j@email.com,Customer Service,Long wait time on hold,Medium,Resolved,Sarah Johnson,2025-08-20,2025-08-22,,2025-08-22 20:00:00,No,44.0,2,North
+CMP-20250825-0018,Bob Smith,bob.s@email.com,Delivery Issues,Damaged package received,High,Escalated,Mike Wilson,2025-08-25,,,2025-08-26 09:00:00,Yes,,,South
+CMP-20250901-0019,Carol White,carol.w@email.com,Billing,Unauthorized transaction,Critical,Resolved,Emily Davis,2025-09-01,2025-09-01,2025-09-02,2025-09-01 13:00:00,No,3.0,5,East
+CMP-20250905-0020,David Brown,david.b@email.com,Technical Support,Data sync error,Medium,Resolved,James Brown,2025-09-05,2025-09-07,,2025-09-07 05:00:00,No,44.0,4,West
+CMP-20250910-0021,Eve Davis,eve.d@email.com,Account Management,Account locked out,High,Closed,Sarah Johnson,2025-09-10,2025-09-11,2025-09-12,2025-09-11 10:00:00,No,19.0,5,North
+CMP-20250915-0022,Frank Miller,frank.m@email.com,Product Defects,Missing components in box,Medium,Resolved,Mike Wilson,2025-09-15,2025-09-17,,2025-09-17 15:00:00,No,48.0,3,South
+CMP-20250920-0023,Grace Wilson,grace.w@email.com,Service Disruption,Website down during peak hours,Critical,Closed,Emily Davis,2025-09-20,2025-09-20,2025-09-21,2025-09-20 06:00:00,No,2.0,5,East
+CMP-20250925-0024,Henry Taylor,henry.t@email.com,Customer Service,Billing complaint not addressed,Low,Resolved,James Brown,2025-09-25,2025-09-28,,2025-09-28 09:00:00,No,72.0,4,West
+CMP-20250928-0025,Alice Johnson,alice.j@email.com,Delivery Issues,Order cancelled without notice,High,Closed,Sarah Johnson,2025-09-28,2025-09-29,2025-09-30,2025-09-29 12:00:00,No,16.5,4,North
+CMP-20251001-0026,Bob Smith,bob.s@email.com,Billing,Invoice not received,Medium,Closed,Mike Wilson,2025-10-01,2025-10-03,2025-10-04,2025-10-03 01:00:00,No,37.5,4,South
+CMP-20251005-0027,Carol White,carol.w@email.com,Technical Support,API integration error,High,Resolved,Emily Davis,2025-10-05,2025-10-06,,2025-10-06 05:00:00,No,20.0,5,East
+CMP-20251010-0028,David Brown,david.b@email.com,Product Defects,Software license not activating,Critical,Escalated,James Brown,2025-10-10,,,2025-10-10 13:00:00,Yes,,,West
+CMP-20251015-0029,Eve Davis,eve.d@email.com,Service Disruption,Server maintenance without notice,Medium,Resolved,Sarah Johnson,2025-10-15,2025-10-17,,2025-10-17 15:00:00,No,44.0,3,North
+CMP-20251020-0030,Frank Miller,frank.m@email.com,Account Management,Unable to change email address,Low,Closed,Mike Wilson,2025-10-20,2025-10-23,2025-10-24,2025-10-23 08:00:00,No,68.0,5,South
+CMP-20251025-0031,Grace Wilson,grace.w@email.com,Customer Service,No response to support ticket,High,Resolved,Emily Davis,2025-10-25,2025-10-26,,2025-10-26 01:00:00,No,22.0,2,East
+CMP-20251028-0032,Henry Taylor,henry.t@email.com,Billing,Discount not applied,Medium,Closed,James Brown,2025-10-28,2025-10-30,2025-10-31,2025-10-30 04:00:00,No,30.0,4,West
+CMP-20251101-0033,Alice Johnson,alice.j@email.com,Technical Support,Two-factor auth not working,Critical,Resolved,Sarah Johnson,2025-11-01,2025-11-01,2025-11-02,2025-11-01 11:00:00,No,2.5,5,North
+CMP-20251105-0034,Bob Smith,bob.s@email.com,Delivery Issues,Wrong address delivery,High,Closed,Mike Wilson,2025-11-05,2025-11-06,2025-11-07,2025-11-06 05:00:00,No,18.0,3,South
+CMP-20251110-0035,Carol White,carol.w@email.com,Product Defects,Screen flickering issue,Medium,Resolved,Emily Davis,2025-11-10,2025-11-12,,2025-11-12 10:00:00,No,36.0,4,East
+CMP-20251115-0036,David Brown,david.b@email.com,Service Disruption,Email delivery delayed,High,Escalated,James Brown,2025-11-15,,,2025-11-16 15:00:00,Yes,,,West
+CMP-20251120-0037,Eve Davis,eve.d@email.com,Billing,Credit not applied to account,Medium,Resolved,Sarah Johnson,2025-11-20,2025-11-22,,2025-11-22 08:00:00,No,42.0,4,North
+CMP-20251125-0038,Frank Miller,frank.m@email.com,Account Management,Profile picture upload error,Low,Closed,Mike Wilson,2025-11-25,2025-11-28,2025-11-29,2025-11-28 09:00:00,No,64.0,5,South
+CMP-20251128-0039,Grace Wilson,grace.w@email.com,Customer Service,Misleading product information,High,Resolved,Emily Davis,2025-11-28,2025-11-29,,2025-11-29 12:00:00,No,20.0,3,East
+CMP-20251201-0040,Henry Taylor,henry.t@email.com,Technical Support,Dashboard not loading,Critical,Resolved,James Brown,2025-12-01,2025-12-01,2025-12-02,2025-12-01 13:00:00,No,3.5,5,West
+CMP-20251205-0041,Alice Johnson,alice.j@email.com,Billing,Year-end billing discrepancy,High,Closed,Sarah Johnson,2025-12-05,2025-12-06,2025-12-07,2025-12-06 05:00:00,No,21.0,4,North
+CMP-20251210-0042,Bob Smith,bob.s@email.com,Delivery Issues,Holiday delivery delay,Medium,Closed,Mike Wilson,2025-12-10,2025-12-12,2025-12-14,2025-12-12 10:00:00,No,38.0,3,South
+CMP-20251215-0043,Carol White,carol.w@email.com,Product Defects,Gift item damaged,High,Escalated,Emily Davis,2025-12-15,,,2025-12-16 15:00:00,Yes,,,East
+CMP-20251220-0044,David Brown,david.b@email.com,Service Disruption,System slowdown during holiday,Critical,Resolved,James Brown,2025-12-20,2025-12-20,2025-12-21,2025-12-20 08:00:00,No,2.0,5,West
+CMP-20251225-0045,Eve Davis,eve.d@email.com,Customer Service,Refund request ignored,High,Resolved,Sarah Johnson,2025-12-25,2025-12-26,,2025-12-26 01:00:00,No,16.5,2,North
+CMP-20251228-0046,Frank Miller,frank.m@email.com,Account Management,Cannot delete account,Low,Closed,Mike Wilson,2025-12-28,2025-12-31,2026-01-01,2025-12-31 04:00:00,No,68.0,4,South
+CMP-20260101-0047,Grace Wilson,grace.w@email.com,Billing,New year subscription charge issue,Medium,Resolved,Emily Davis,2026-01-01,2026-01-03,,2026-01-03 01:00:00,No,36.0,4,East
+CMP-20260105-0048,Henry Taylor,henry.t@email.com,Technical Support,Mobile app not syncing,High,Closed,James Brown,2026-01-05,2026-01-06,2026-01-07,2026-01-06 05:00:00,No,19.5,5,West
+CMP-20260110-0049,Alice Johnson,alice.j@email.com,Delivery Issues,Parcel held at customs,Medium,Resolved,Sarah Johnson,2026-01-10,2026-01-12,,2026-01-12 10:00:00,No,40.0,3,North
+CMP-20260115-0050,Bob Smith,bob.s@email.com,Product Defects,Keyboard key not responding,Critical,Closed,Mike Wilson,2026-01-15,2026-01-15,2026-01-16,2026-01-15 09:00:00,No,1.5,5,South
+CMP-20260120-0051,Carol White,carol.w@email.com,Service Disruption,Database connectivity error,Critical,Escalated,Emily Davis,2026-01-20,,,2026-01-20 13:00:00,Yes,,,East
+CMP-20260125-0052,David Brown,david.b@email.com,Customer Service,Unhelpful support response,Medium,Resolved,James Brown,2026-01-25,2026-01-27,,2026-01-27 09:00:00,No,42.0,3,West
+CMP-20260128-0053,Eve Davis,eve.d@email.com,Account Management,Two accounts merged without consent,High,Resolved,Sarah Johnson,2026-01-28,2026-01-29,,2026-01-29 04:00:00,No,19.0,4,North
+CMP-20260201-0054,Frank Miller,frank.m@email.com,Billing,Overpayment not refunded,High,Closed,Mike Wilson,2026-02-01,2026-02-02,2026-02-03,2026-02-02 01:00:00,No,21.0,4,South
+CMP-20260205-0055,Grace Wilson,grace.w@email.com,Technical Support,Report generation failing,Medium,Resolved,Emily Davis,2026-02-05,2026-02-07,,2026-02-07 05:00:00,No,44.0,5,East
+CMP-20260210-0056,Henry Taylor,henry.t@email.com,Product Defects,Charging port loose,Low,Closed,James Brown,2026-02-10,2026-02-13,2026-02-14,2026-02-13 10:00:00,No,68.0,4,West
+CMP-20260215-0057,Alice Johnson,alice.j@email.com,Service Disruption,Outage for 2 hours,Critical,Resolved,Sarah Johnson,2026-02-15,2026-02-15,2026-02-16,2026-02-15 13:00:00,No,3.0,5,North
+CMP-20260220-0058,Bob Smith,bob.s@email.com,Delivery Issues,Order never arrived,High,Escalated,Mike Wilson,2026-02-20,,,2026-02-21 08:00:00,Yes,,,South
+CMP-20260225-0059,Carol White,carol.w@email.com,Customer Service,Staff complaint,Medium,Resolved,Emily Davis,2026-02-25,2026-02-27,,2026-02-27 09:00:00,No,42.0,2,East
+CMP-20260228-0060,David Brown,david.b@email.com,Account Management,Subscription renewal failed,Low,Closed,James Brown,2026-02-28,2026-03-03,2026-03-04,2026-03-03 08:00:00,No,68.0,4,West
+CMP-20260301-0061,Eve Davis,eve.d@email.com,Billing,Tax calculation error,High,Resolved,Sarah Johnson,2026-03-01,2026-03-02,,2026-03-02 01:00:00,No,18.5,4,North
+CMP-20260305-0062,Frank Miller,frank.m@email.com,Technical Support,Search functionality broken,Medium,Closed,Mike Wilson,2026-03-05,2026-03-07,2026-03-08,2026-03-07 05:00:00,No,44.0,4,South
+CMP-20260310-0063,Grace Wilson,grace.w@email.com,Product Defects,Color mismatch on product,Low,Resolved,Emily Davis,2026-03-10,2026-03-13,,2026-03-13 10:00:00,No,68.0,5,East
+CMP-20260315-0064,Henry Taylor,henry.t@email.com,Service Disruption,Scheduled maintenance unannounced,Medium,Closed,James Brown,2026-03-15,2026-03-17,2026-03-18,2026-03-17 15:00:00,No,38.5,3,West
+CMP-20260320-0065,Alice Johnson,alice.j@email.com,Customer Service,Query not resolved in time,High,Escalated,Sarah Johnson,2026-03-20,,,2026-03-21 08:00:00,Yes,,,North
+CMP-20260325-0066,Bob Smith,bob.s@email.com,Delivery Issues,Duplicate shipment sent,Medium,Resolved,Mike Wilson,2026-03-25,2026-03-27,,2026-03-27 09:00:00,No,42.0,3,South
+CMP-20260328-0067,Carol White,carol.w@email.com,Account Management,Unable to access premium features,High,Closed,Emily Davis,2026-03-28,2026-03-29,2026-03-30,2026-03-29 04:00:00,No,20.0,5,East
+CMP-20260401-0068,David Brown,david.b@email.com,Billing,Free trial charged unexpectedly,Critical,Resolved,James Brown,2026-04-01,2026-04-01,2026-04-02,2026-04-01 05:00:00,No,1.5,5,West
+CMP-20260405-0069,Eve Davis,eve.d@email.com,Technical Support,File upload limit too low,Medium,Resolved,Sarah Johnson,2026-04-05,2026-04-07,,2026-04-07 09:00:00,No,44.0,4,North
+CMP-20260410-0070,Frank Miller,frank.m@email.com,Product Defects,Firmware update bricked device,Critical,Escalated,Mike Wilson,2026-04-10,,,2026-04-10 14:00:00,Yes,,,South
+CMP-20260415-0071,Grace Wilson,grace.w@email.com,Service Disruption,Notification service down,High,Resolved,Emily Davis,2026-04-15,2026-04-16,,2026-04-16 15:00:00,No,22.0,4,East
+CMP-20260420-0072,Henry Taylor,henry.t@email.com,Delivery Issues,Signature not collected at delivery,Low,Closed,James Brown,2026-04-20,2026-04-23,2026-04-24,2026-04-23 08:00:00,No,64.0,5,West
+CMP-20260425-0073,Alice Johnson,alice.j@email.com,Customer Service,Promised callback never received,High,Resolved,Sarah Johnson,2026-04-25,2026-04-26,,2026-04-26 01:00:00,No,19.5,3,North
+CMP-20260428-0074,Bob Smith,bob.s@email.com,Account Management,API key expired without notice,Medium,Closed,Mike Wilson,2026-04-28,2026-04-30,2026-05-01,2026-04-30 04:00:00,No,36.0,4,South
+CMP-20260501-0075,Carol White,carol.w@email.com,Billing,Pricing plan mismatch,High,In Progress,Emily Davis,2026-05-01,,,2026-05-02 09:00:00,No,,,East
+CMP-20260505-0076,David Brown,david.b@email.com,Technical Support,SSL certificate expired on website,Critical,Escalated,James Brown,2026-05-05,,,2026-05-05 13:00:00,Yes,,,West
+CMP-20260508-0077,Eve Davis,eve.d@email.com,Delivery Issues,Item received broken,High,In Progress,Sarah Johnson,2026-05-08,,,2026-05-09 14:00:00,No,,,North
+CMP-20260510-0078,Frank Miller,frank.m@email.com,Product Defects,Battery drains too fast,Medium,Open,Unassigned,2026-05-10,,,2026-05-12 10:00:00,No,,,South
+CMP-20260512-0079,Grace Wilson,grace.w@email.com,Service Disruption,API rate limit issue,High,Open,Unassigned,2026-05-12,,,2026-05-13 12:00:00,No,,,East
+CMP-20260514-0080,Henry Taylor,henry.t@email.com,Account Management,SSO login not working,Critical,Open,Unassigned,2026-05-14,,,2026-05-14 16:00:00,Yes,,,West
+CMP-20260515-0081,Alice Johnson,alice.j@email.com,Customer Service,Price increased without notice,Medium,Open,Unassigned,2026-05-15,,,2026-05-17 09:00:00,No,,,North
+CMP-20260516-0082,Bob Smith,bob.s@email.com,Billing,Auto-renewal charge disputed,High,In Progress,Mike Wilson,2026-05-16,,,2026-05-17 16:00:00,No,,,South
+CMP-20260517-0083,Carol White,carol.w@email.com,Technical Support,Data export not working,Medium,Open,Unassigned,2026-05-17,,,2026-05-19 09:00:00,No,,,East
+CMP-20260518-0084,David Brown,david.b@email.com,Delivery Issues,Wrong item in package,High,Open,Unassigned,2026-05-18,,,2026-05-19 10:00:00,No,,,West
+CMP-20260519-0085,Eve Davis,eve.d@email.com,Product Defects,Touch screen unresponsive,Critical,Escalated,Emily Davis,2026-05-19,,,2026-05-19 17:00:00,Yes,,,North
+CMP-20251124-0086,Carol White,carol.w@email.com,Billing,Wrong billing cycle,Low,In Progress,Sarah Johnson,2025-11-24,,,2025-11-27 00:00:00,No,,,West
+CMP-20250117-0087,Leo Martinez,leo.m@email.com,Billing,Wrong billing cycle,Low,Escalated,James Brown,2025-01-17,,,2025-01-20 00:00:00,Yes,,,South
+CMP-20250818-0088,Leo Martinez,leo.m@email.com,Delivery Issues,Damaged goods,High,Closed,Sarah Johnson,2025-08-18,2025-08-18,2025-08-19,2025-08-19 00:00:00,No,18.0,4,North
+CMP-20250217-0089,Alice Johnson,alice.j@email.com,Technical Support,SSL certificate error,Low,In Progress,Sarah Johnson,2025-02-17,,,2025-02-20 00:00:00,No,,,West
+CMP-20250210-0090,Leo Martinez,leo.m@email.com,Delivery Issues,Delayed shipment,High,Resolved,Emily Davis,2025-02-10,2025-02-11,,2025-02-11 00:00:00,Yes,27.9,3,North
+CMP-20260314-0091,Carol White,carol.w@email.com,Service Disruption,Server unreachable,Low,Closed,James Brown,2026-03-14,2026-03-16,2026-03-16,2026-03-17 00:00:00,No,49.6,2,South
+CMP-20251001-0092,Karen Hall,karen.h@email.com,Account Management,Account merge issue,Medium,Escalated,Mike Wilson,2025-10-01,,,2025-10-03 00:00:00,Yes,,,East
+CMP-20260308-0093,Grace Wilson,grace.w@email.com,Customer Service,Follow-up missing,Low,Resolved,Sarah Johnson,2026-03-08,2026-03-10,,2026-03-11 00:00:00,No,51.2,5,East
+CMP-20250419-0094,Eve Davis,eve.d@email.com,Account Management,Subscription issue,Critical,Resolved,James Brown,2025-04-19,2025-04-19,,2025-04-19 04:00:00,Yes,5.0,5,East
+CMP-20260118-0095,David Brown,david.b@email.com,Delivery Issues,Return not processed,Critical,Open,Unassigned,2026-01-18,,,2026-01-18 04:00:00,No,,,South
+CMP-20250918-0096,Karen Hall,karen.h@email.com,Technical Support,App crash,Low,Resolved,Sarah Johnson,2025-09-18,2025-09-21,,2025-09-21 00:00:00,Yes,85.0,5,North
+CMP-20250717-0097,Karen Hall,karen.h@email.com,Technical Support,Password reset issue,Critical,Open,Unassigned,2025-07-17,,,2025-07-17 04:00:00,No,,,East
+CMP-20260129-0098,Henry Taylor,henry.t@email.com,Account Management,Subscription issue,High,Resolved,James Brown,2026-01-29,2026-01-30,,2026-01-30 00:00:00,Yes,29.3,3,South
+CMP-20250917-0099,Frank Miller,frank.m@email.com,Billing,Refund not processed,High,In Progress,Sarah Johnson,2025-09-17,,,2025-09-18 00:00:00,No,,,East
+CMP-20250908-0100,Alice Johnson,alice.j@email.com,Billing,Wrong billing cycle,Low,Resolved,Emily Davis,2025-09-08,2025-09-11,,2025-09-11 00:00:00,Yes,76.8,1,North
+CMP-20260110-0101,Karen Hall,karen.h@email.com,Technical Support,App crash,Low,Closed,Mike Wilson,2026-01-10,2026-01-12,2026-01-13,2026-01-13 00:00:00,No,71.6,5,South
+CMP-20260421-0102,Henry Taylor,henry.t@email.com,Delivery Issues,Return not processed,Medium,Open,Unassigned,2026-04-21,,,2026-04-23 00:00:00,No,,,West
+CMP-20250303-0103,Jack Lewis,jack.l@email.com,Service Disruption,Service outage,Medium,Closed,Unassigned,2025-03-03,2025-03-05,2025-03-05,2025-03-05 00:00:00,Yes,49.4,2,South
+CMP-20250204-0104,Eve Davis,eve.d@email.com,Billing,Wrong billing cycle,High,Escalated,Mike Wilson,2025-02-04,,,2025-02-05 00:00:00,Yes,,,South
+CMP-20260106-0105,David Brown,david.b@email.com,Delivery Issues,Tracking issue,Critical,Resolved,James Brown,2026-01-06,2026-01-06,,2026-01-06 04:00:00,Yes,4.6,3,West
+CMP-20250730-0106,Grace Wilson,grace.w@email.com,Technical Support,Login failure,Low,In Progress,Sarah Johnson,2025-07-30,,,2025-08-02 00:00:00,No,,,South
+CMP-20250409-0107,Henry Taylor,henry.t@email.com,Service Disruption,API timeout errors,Critical,Resolved,Mike Wilson,2025-04-09,2025-04-09,,2025-04-09 04:00:00,Yes,5.7,4,North
+CMP-20250126-0108,Grace Wilson,grace.w@email.com,Account Management,Subscription issue,Low,Closed,Mike Wilson,2025-01-26,2025-01-28,2025-01-28,2025-01-29 00:00:00,No,49.9,2,South
+CMP-20250714-0109,Grace Wilson,grace.w@email.com,Billing,Tax error on invoice,Critical,Escalated,James Brown,2025-07-14,,,2025-07-14 04:00:00,Yes,,,South
+CMP-20250408-0110,Alice Johnson,alice.j@email.com,Product Defects,Firmware issue,Medium,Resolved,Sarah Johnson,2025-04-08,2025-04-09,,2025-04-10 00:00:00,No,46.9,5,South
+CMP-20250130-0111,Karen Hall,karen.h@email.com,Delivery Issues,Wrong item shipped,Low,Open,Unassigned,2025-01-30,,,2025-02-02 00:00:00,No,,,West
+CMP-20250303-0112,Grace Wilson,grace.w@email.com,Delivery Issues,Wrong item shipped,Medium,Escalated,Emily Davis,2025-03-03,,,2025-03-05 00:00:00,Yes,,,East
+CMP-20250415-0113,Karen Hall,karen.h@email.com,Account Management,Subscription issue,High,Escalated,James Brown,2025-04-15,,,2025-04-16 00:00:00,Yes,,,East
+CMP-20260421-0114,Bob Smith,bob.s@email.com,Customer Service,Rude agent,Low,Closed,Unassigned,2026-04-21,2026-04-23,2026-04-24,2026-04-24 00:00:00,No,68.8,4,North
+CMP-20260327-0115,Jack Lewis,jack.l@email.com,Service Disruption,API timeout errors,High,Open,Unassigned,2026-03-27,,,2026-03-28 00:00:00,No,,,North
+CMP-20251208-0116,Eve Davis,eve.d@email.com,Customer Service,No callback received,High,Resolved,Sarah Johnson,2025-12-08,2025-12-08,,2025-12-09 00:00:00,No,14.6,5,South
+CMP-20250520-0117,Irene Clark,irene.c@email.com,Product Defects,Missing accessories,Medium,Closed,Mike Wilson,2025-05-20,2025-05-22,2025-05-23,2025-05-22 00:00:00,Yes,63.1,2,West
+CMP-20260301-0118,Karen Hall,karen.h@email.com,Product Defects,Software bug,Low,Open,Unassigned,2026-03-01,,,2026-03-04 00:00:00,No,,,South
+CMP-20260115-0119,Leo Martinez,leo.m@email.com,Technical Support,Password reset issue,Critical,Open,Unassigned,2026-01-15,,,2026-01-15 04:00:00,No,,,North
+CMP-20260304-0120,Frank Miller,frank.m@email.com,Product Defects,Missing accessories,Medium,Open,Unassigned,2026-03-04,,,2026-03-06 00:00:00,No,,,North
+CMP-20260406-0121,Irene Clark,irene.c@email.com,Product Defects,Firmware issue,Medium,Open,Unassigned,2026-04-06,,,2026-04-08 00:00:00,No,,,West
+CMP-20260514-0122,Carol White,carol.w@email.com,Delivery Issues,Damaged goods,Medium,Open,Unassigned,2026-05-14,,,2026-05-16 00:00:00,No,,,North
+CMP-20250402-0123,Eve Davis,eve.d@email.com,Account Management,Permission error,High,Resolved,James Brown,2025-04-02,2025-04-03,,2025-04-03 00:00:00,Yes,28.8,4,North
+CMP-20260316-0124,Eve Davis,eve.d@email.com,Technical Support,Data sync failure,Medium,Open,Unassigned,2026-03-16,,,2026-03-18 00:00:00,No,,,South
+CMP-20250425-0125,Eve Davis,eve.d@email.com,Billing,Overcharge on bill,Medium,Closed,Emily Davis,2025-04-25,2025-04-26,2025-04-27,2025-04-27 00:00:00,No,46.0,4,North
+CMP-20250301-0126,Bob Smith,bob.s@email.com,Product Defects,Defective unit received,Medium,Closed,Emily Davis,2025-03-01,2025-03-02,2025-03-03,2025-03-03 00:00:00,No,38.9,5,North
+CMP-20250717-0127,Irene Clark,irene.c@email.com,Delivery Issues,Package not delivered,Medium,Open,Unassigned,2025-07-17,,,2025-07-19 00:00:00,No,,,South
+CMP-20250706-0128,Karen Hall,karen.h@email.com,Technical Support,Data sync failure,Low,Open,Unassigned,2025-07-06,,,2025-07-09 00:00:00,No,,,East
+CMP-20250917-0129,David Brown,david.b@email.com,Product Defects,Software bug,Critical,Closed,Emily Davis,2025-09-17,2025-09-17,2025-09-17,2025-09-17 04:00:00,Yes,5.4,3,East
+CMP-20250727-0130,Jack Lewis,jack.l@email.com,Delivery Issues,Tracking issue,Low,Escalated,Emily Davis,2025-07-27,,,2025-07-30 00:00:00,Yes,,,West
+CMP-20250815-0131,Eve Davis,eve.d@email.com,Technical Support,Password reset issue,Medium,Closed,Mike Wilson,2025-08-15,2025-08-17,2025-08-17,2025-08-17 00:00:00,Yes,51.3,3,East
+CMP-20250426-0132,Henry Taylor,henry.t@email.com,Customer Service,Complaint not addressed,Medium,Escalated,Sarah Johnson,2025-04-26,,,2025-04-28 00:00:00,Yes,,,West
+CMP-20250801-0133,Grace Wilson,grace.w@email.com,Account Management,Role assignment error,Medium,Resolved,James Brown,2025-08-01,2025-08-03,,2025-08-03 00:00:00,Yes,55.5,1,North
+CMP-20260203-0134,Irene Clark,irene.c@email.com,Technical Support,Login failure,Medium,Resolved,James Brown,2026-02-03,2026-02-05,,2026-02-05 00:00:00,Yes,64.7,4,South
+CMP-20260215-0135,Irene Clark,irene.c@email.com,Technical Support,Feature not working,High,Closed,James Brown,2026-02-15,2026-02-15,2026-02-16,2026-02-16 00:00:00,No,15.4,5,East
+CMP-20260120-0136,Eve Davis,eve.d@email.com,Service Disruption,Performance degradation,High,Closed,James Brown,2026-01-20,2026-01-21,2026-01-21,2026-01-21 00:00:00,Yes,27.4,4,East
+CMP-20260403-0137,Leo Martinez,leo.m@email.com,Delivery Issues,Tracking issue,Low,Resolved,Mike Wilson,2026-04-03,2026-04-05,,2026-04-06 00:00:00,No,51.4,4,West
+CMP-20250619-0138,Grace Wilson,grace.w@email.com,Delivery Issues,Tracking issue,Critical,Open,Unassigned,2025-06-19,,,2025-06-19 04:00:00,No,,,North
+CMP-20260315-0139,Grace Wilson,grace.w@email.com,Customer Service,Misleading information,Critical,Open,Unassigned,2026-03-15,,,2026-03-15 04:00:00,No,,,West
+CMP-20251003-0140,Henry Taylor,henry.t@email.com,Account Management,Account deletion request,Medium,Resolved,Emily Davis,2025-10-03,2025-10-04,,2025-10-05 00:00:00,No,40.1,4,South
+CMP-20260307-0141,Jack Lewis,jack.l@email.com,Technical Support,Feature not working,Medium,Closed,Sarah Johnson,2026-03-07,2026-03-08,2026-03-08,2026-03-09 00:00:00,No,25.2,3,West
+CMP-20250404-0142,Frank Miller,frank.m@email.com,Billing,Payment not reflected,High,Resolved,Mike Wilson,2025-04-04,2025-04-05,,2025-04-05 00:00:00,Yes,33.1,3,West
+CMP-20250510-0143,David Brown,david.b@email.com,Customer Service,Follow-up missing,Low,Escalated,Sarah Johnson,2025-05-10,,,2025-05-13 00:00:00,Yes,,,North
+CMP-20260502-0144,Carol White,carol.w@email.com,Service Disruption,Performance degradation,Medium,Closed,Mike Wilson,2026-05-02,2026-05-03,2026-05-04,2026-05-04 00:00:00,No,28.9,5,East
+CMP-20260128-0145,Eve Davis,eve.d@email.com,Product Defects,Software bug,Medium,Resolved,Sarah Johnson,2026-01-28,2026-01-29,,2026-01-30 00:00:00,No,25.2,3,West
+CMP-20250723-0146,Bob Smith,bob.s@email.com,Account Management,Permission error,Medium,Escalated,Emily Davis,2025-07-23,,,2025-07-25 00:00:00,Yes,,,North
+CMP-20260212-0147,Bob Smith,bob.s@email.com,Delivery Issues,Return not processed,Low,Closed,James Brown,2026-02-12,2026-02-14,2026-02-15,2026-02-15 00:00:00,No,58.1,5,North
+CMP-20250810-0148,Leo Martinez,leo.m@email.com,Product Defects,Software bug,Critical,Closed,James Brown,2025-08-10,2025-08-10,2025-08-10,2025-08-10 04:00:00,Yes,4.3,5,West
+CMP-20250812-0149,Eve Davis,eve.d@email.com,Customer Service,Rude agent,High,Open,Unassigned,2025-08-12,,,2025-08-13 00:00:00,No,,,South
+CMP-20260120-0150,Carol White,carol.w@email.com,Technical Support,Data sync failure,Critical,Closed,James Brown,2026-01-20,2026-01-20,2026-01-20,2026-01-20 04:00:00,No,3.3,4,East
+CMP-20251012-0151,Henry Taylor,henry.t@email.com,Billing,Subscription not cancelled,Medium,Closed,Unassigned,2025-10-12,2025-10-13,2025-10-13,2025-10-14 00:00:00,No,34.4,5,West
+CMP-20260210-0152,Eve Davis,eve.d@email.com,Billing,Wrong billing cycle,Low,Escalated,Emily Davis,2026-02-10,,,2026-02-13 00:00:00,Yes,,,West
+CMP-20251011-0153,Leo Martinez,leo.m@email.com,Delivery Issues,Return not processed,High,Closed,Emily Davis,2025-10-11,2025-10-11,2025-10-12,2025-10-12 00:00:00,No,18.6,3,East
+CMP-20250303-0154,Leo Martinez,leo.m@email.com,Account Management,Account merge issue,Medium,Closed,James Brown,2025-03-03,2025-03-05,2025-03-05,2025-03-05 00:00:00,Yes,56.8,2,South
+CMP-20250601-0155,Eve Davis,eve.d@email.com,Service Disruption,Scheduled downtime,High,Resolved,Sarah Johnson,2025-06-01,2025-06-01,,2025-06-02 00:00:00,No,13.3,3,South
+CMP-20251123-0156,Henry Taylor,henry.t@email.com,Customer Service,Misleading information,Critical,Closed,Sarah Johnson,2025-11-23,2025-11-23,2025-11-24,2025-11-23 04:00:00,No,3.2,4,West
+CMP-20250228-0157,Carol White,carol.w@email.com,Customer Service,Long wait time,Low,Resolved,Sarah Johnson,2025-02-28,2025-03-03,,2025-03-03 00:00:00,Yes,76.5,3,North
+CMP-20250508-0158,Henry Taylor,henry.t@email.com,Billing,Subscription not cancelled,Critical,Open,Unassigned,2025-05-08,,,2025-05-08 04:00:00,No,,,East
+CMP-20260317-0159,David Brown,david.b@email.com,Delivery Issues,Wrong item shipped,Critical,Escalated,Emily Davis,2026-03-17,,,2026-03-17 04:00:00,Yes,,,North
+CMP-20250322-0160,Grace Wilson,grace.w@email.com,Service Disruption,Service outage,Medium,Closed,Mike Wilson,2025-03-22,2025-03-24,2025-03-24,2025-03-24 00:00:00,Yes,49.7,3,East
+CMP-20251228-0161,Eve Davis,eve.d@email.com,Product Defects,Product mismatch,Critical,In Progress,Mike Wilson,2025-12-28,,,2025-12-28 04:00:00,No,,,West
+CMP-20250228-0162,Bob Smith,bob.s@email.com,Delivery Issues,Damaged goods,Medium,Resolved,Emily Davis,2025-02-28,2025-03-02,,2025-03-02 00:00:00,Yes,62.0,5,East
+CMP-20250813-0163,Irene Clark,irene.c@email.com,Billing,Tax error on invoice,Critical,Closed,James Brown,2025-08-13,2025-08-13,2025-08-13,2025-08-13 04:00:00,No,3.6,5,East
+CMP-20251106-0164,Karen Hall,karen.h@email.com,Product Defects,Defective unit received,Low,Open,Unassigned,2025-11-06,,,2025-11-09 00:00:00,No,,,North
+CMP-20260126-0165,Carol White,carol.w@email.com,Customer Service,Misleading information,Medium,Open,Unassigned,2026-01-26,,,2026-01-28 00:00:00,No,,,West
+CMP-20251122-0166,Grace Wilson,grace.w@email.com,Customer Service,Follow-up missing,Critical,Resolved,James Brown,2025-11-22,2025-11-22,,2025-11-22 04:00:00,Yes,4.7,2,East
+CMP-20250730-0167,Henry Taylor,henry.t@email.com,Account Management,Account locked,Critical,Resolved,James Brown,2025-07-30,2025-07-30,,2025-07-30 04:00:00,No,3.0,1,West
+CMP-20260319-0168,Alice Johnson,alice.j@email.com,Delivery Issues,Tracking issue,Low,Resolved,James Brown,2026-03-19,2026-03-21,,2026-03-22 00:00:00,No,62.0,4,West
+CMP-20260125-0169,Henry Taylor,henry.t@email.com,Billing,Tax error on invoice,Medium,Open,Unassigned,2026-01-25,,,2026-01-27 00:00:00,No,,,West
+CMP-20250304-0170,Irene Clark,irene.c@email.com,Billing,Invoice discrepancy,Medium,Closed,Emily Davis,2025-03-04,2025-03-05,2025-03-06,2025-03-06 00:00:00,No,33.7,2,West
+CMP-20260430-0171,Grace Wilson,grace.w@email.com,Billing,Tax error on invoice,Medium,Open,Unassigned,2026-04-30,,,2026-05-02 00:00:00,No,,,West
+CMP-20250505-0172,Eve Davis,eve.d@email.com,Technical Support,Password reset issue,Medium,In Progress,James Brown,2025-05-05,,,2025-05-07 00:00:00,No,,,East
+CMP-20260424-0173,Jack Lewis,jack.l@email.com,Customer Service,Misleading information,High,Closed,Emily Davis,2026-04-24,2026-04-25,2026-04-25,2026-04-25 00:00:00,Yes,26.3,5,West
+CMP-20250626-0174,Leo Martinez,leo.m@email.com,Product Defects,Product mismatch,Critical,Resolved,Emily Davis,2025-06-26,2025-06-26,,2025-06-26 04:00:00,No,3.5,4,North
+CMP-20250612-0175,Karen Hall,karen.h@email.com,Account Management,Account deletion request,Critical,In Progress,Mike Wilson,2025-06-12,,,2025-06-12 04:00:00,No,,,West
+CMP-20260509-0176,Henry Taylor,henry.t@email.com,Billing,Overcharge on bill,Medium,Resolved,Emily Davis,2026-05-09,2026-05-11,,2026-05-11 00:00:00,Yes,67.7,1,South
+CMP-20250729-0177,Frank Miller,frank.m@email.com,Customer Service,Misleading information,Medium,Escalated,James Brown,2025-07-29,,,2025-07-31 00:00:00,Yes,,,North
+CMP-20260313-0178,Jack Lewis,jack.l@email.com,Product Defects,Defective unit received,Critical,Resolved,James Brown,2026-03-13,2026-03-13,,2026-03-13 04:00:00,Yes,4.5,3,South
+CMP-20260118-0179,Carol White,carol.w@email.com,Billing,Payment not reflected,Critical,Escalated,Sarah Johnson,2026-01-18,,,2026-01-18 04:00:00,Yes,,,North
+CMP-20250616-0180,Carol White,carol.w@email.com,Customer Service,Escalation ignored,Low,Resolved,Emily Davis,2025-06-16,2025-06-18,,2025-06-19 00:00:00,No,65.7,2,South
+CMP-20250331-0181,Jack Lewis,jack.l@email.com,Billing,Payment not reflected,Critical,Resolved,Mike Wilson,2025-03-31,2025-03-31,,2025-03-31 04:00:00,No,3.8,3,West
+CMP-20250511-0182,Karen Hall,karen.h@email.com,Account Management,Account merge issue,Low,Closed,James Brown,2025-05-11,2025-05-12,2025-05-13,2025-05-14 00:00:00,No,40.8,4,West
+CMP-20251220-0183,Henry Taylor,henry.t@email.com,Product Defects,Battery problem,Critical,Resolved,Mike Wilson,2025-12-20,2025-12-20,,2025-12-20 04:00:00,No,3.5,3,East
+CMP-20251225-0184,Alice Johnson,alice.j@email.com,Product Defects,Missing accessories,Low,Closed,James Brown,2025-12-25,2025-12-28,2025-12-29,2025-12-28 00:00:00,Yes,80.4,2,West
+CMP-20260303-0185,Karen Hall,karen.h@email.com,Product Defects,Product mismatch,Medium,Resolved,Emily Davis,2026-03-03,2026-03-04,,2026-03-05 00:00:00,No,36.0,2,North
+CMP-20260408-0186,Jack Lewis,jack.l@email.com,Account Management,Account locked,Low,Closed,James Brown,2026-04-08,2026-04-09,2026-04-10,2026-04-11 00:00:00,No,44.5,4,West
+CMP-20250331-0187,Carol White,carol.w@email.com,Service Disruption,API timeout errors,Medium,Resolved,Emily Davis,2025-03-31,2025-04-02,,2025-04-02 00:00:00,Yes,63.6,4,East
+CMP-20260118-0188,Carol White,carol.w@email.com,Customer Service,Rude agent,High,In Progress,Mike Wilson,2026-01-18,,,2026-01-19 00:00:00,No,,,West
+CMP-20260511-0189,Alice Johnson,alice.j@email.com,Customer Service,Escalation ignored,High,Resolved,Unassigned,2026-05-11,2026-05-11,,2026-05-12 00:00:00,No,15.0,3,East
+CMP-20251027-0190,Alice Johnson,alice.j@email.com,Technical Support,Configuration error,High,Escalated,Emily Davis,2025-10-27,,,2025-10-28 00:00:00,Yes,,,South
+CMP-20251128-0191,Bob Smith,bob.s@email.com,Billing,Subscription not cancelled,Critical,Resolved,Emily Davis,2025-11-28,2025-11-28,,2025-11-28 04:00:00,Yes,5.8,3,West
+CMP-20250301-0192,Henry Taylor,henry.t@email.com,Billing,Subscription not cancelled,Medium,Closed,Mike Wilson,2025-03-01,2025-03-03,2025-03-04,2025-03-03 00:00:00,Yes,65.0,5,South
+CMP-20260330-0193,Alice Johnson,alice.j@email.com,Technical Support,SSL certificate error,Low,Escalated,Mike Wilson,2026-03-30,,,2026-04-02 00:00:00,Yes,,,West
+CMP-20250816-0194,Irene Clark,irene.c@email.com,Service Disruption,Server unreachable,High,Open,Unassigned,2025-08-16,,,2025-08-17 00:00:00,No,,,East
+CMP-20250201-0195,Bob Smith,bob.s@email.com,Technical Support,Configuration error,High,Escalated,Sarah Johnson,2025-02-01,,,2025-02-02 00:00:00,Yes,,,North
+CMP-20260207-0196,Irene Clark,irene.c@email.com,Product Defects,Hardware malfunction,Medium,Resolved,Mike Wilson,2026-02-07,2026-02-08,,2026-02-09 00:00:00,No,34.4,2,East
+CMP-20260201-0197,Irene Clark,irene.c@email.com,Service Disruption,Scheduled downtime,Low,Resolved,Mike Wilson,2026-02-01,2026-02-03,,2026-02-04 00:00:00,No,48.6,1,South
+CMP-20250108-0198,Eve Davis,eve.d@email.com,Product Defects,Software bug,Medium,Resolved,Sarah Johnson,2025-01-08,2025-01-10,,2025-01-10 00:00:00,Yes,59.6,5,North
+CMP-20260117-0199,Henry Taylor,henry.t@email.com,Billing,Overcharge on bill,Critical,Closed,Emily Davis,2026-01-17,2026-01-17,2026-01-17,2026-01-17 04:00:00,Yes,5.4,4,West
+CMP-20251126-0200,Karen Hall,karen.h@email.com,Billing,Subscription not cancelled,Low,Resolved,James Brown,2025-11-26,2025-11-29,,2025-11-29 00:00:00,Yes,87.3,4,North
+CMP-20260406-0201,Eve Davis,eve.d@email.com,Billing,Refund not processed,High,Escalated,Emily Davis,2026-04-06,,,2026-04-07 00:00:00,Yes,,,West
+CMP-20251102-0202,Leo Martinez,leo.m@email.com,Delivery Issues,Wrong item shipped,High,Resolved,James Brown,2025-11-02,2025-11-03,,2025-11-03 00:00:00,Yes,27.7,5,South
+CMP-20250809-0203,Grace Wilson,grace.w@email.com,Technical Support,Feature not working,Medium,In Progress,Emily Davis,2025-08-09,,,2025-08-11 00:00:00,No,,,West
+CMP-20250610-0204,Bob Smith,bob.s@email.com,Account Management,Role assignment error,High,Resolved,Mike Wilson,2025-06-10,2025-06-10,,2025-06-11 00:00:00,No,14.0,4,North
+CMP-20260117-0205,Karen Hall,karen.h@email.com,Account Management,Two-factor auth problem,High,Resolved,Sarah Johnson,2026-01-17,2026-01-17,,2026-01-18 00:00:00,No,20.5,4,North
